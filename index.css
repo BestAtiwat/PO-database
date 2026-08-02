@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* Ensure perfectly uniform height, font size, and line height for all form inputs across browsers & WebKit/iPadOS */
+select,
+input[type="text"],
+input[type="date"] {
+  height: 2.5rem !important; /* 40px */
+  min-height: 2.5rem !important;
+  max-height: 2.5rem !important;
+  box-sizing: border-box !important;
+  font-size: 0.75rem !important; /* text-xs */
+  line-height: 1.25rem !important;
+}
+
+/* WebKit / Safari iOS & iPadOS date input normalization */
+input[type="date"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="date"]::-webkit-date-and-time-value {
+  text-align: left;
+  line-height: 2.5rem !important;
+  height: 2.5rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.65;
+  padding: 0;
+  margin-right: 2px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
