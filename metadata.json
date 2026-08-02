@@ -1,0 +1,8 @@
+{
+  "name": "Remix: ระบบบริหารจัดการหน่วยกายอุปกรณ์เสริมและเทียม (P\u0026O)",
+  "description": "ระบบบริหารจัดการหน่วยกายอุปกรณ์เสริมและเทียม พร้อมการเชื่อมต่อ Google Sheets \u0026 Calendar และ AI Automation",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

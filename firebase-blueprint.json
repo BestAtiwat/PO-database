@@ -1,0 +1,51 @@
+{
+  "entities": {
+    "service_records": {
+      "title": "ServiceRecord",
+      "description": "ทะเบียนผู้รับบริการกายอุปกรณ์",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "serviceDate": { "type": "string" },
+        "patientName": { "type": "string" },
+        "hn": { "type": "string" },
+        "gender": { "type": "string" },
+        "disease": { "type": "string" },
+        "cause": { "type": "string" },
+        "patientType": { "type": "string" },
+        "coverage": { "type": "string" },
+        "staffName": { "type": "string" },
+        "assistantName": { "type": "string" },
+        "category": { "type": "string" },
+        "deviceType": { "type": "string" },
+        "quantity": { "type": "number" },
+        "unit": { "type": "string" },
+        "price": { "type": "number" },
+        "appointmentDate": { "type": "string" },
+        "deliveryDate": { "type": "string" },
+        "delayReason": { "type": "string" },
+        "productionStatus": { "type": "string" },
+        "notes": { "type": "string" },
+        "calendarEventId": { "type": "string" },
+        "fabricationDetails": { "type": "object" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "serviceDate", "patientName", "hn"]
+    },
+    "app_settings": {
+      "title": "AppSettings",
+      "description": "การตั้งค่าระบบ",
+      "type": "object",
+      "properties": {
+        "googleSheetId": { "type": "string" },
+        "spreadsheetUrl": { "type": "string" },
+        "googleCalendarId": { "type": "string" },
+        "autoSyncGoogleSheet": { "type": "boolean" },
+        "autoSyncGoogleCalendar": { "type": "boolean" },
+        "adminPassword": { "type": "string" }
+      },
+      "required": ["googleSheetId"]
+    }
+  }
+}
